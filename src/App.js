@@ -1,37 +1,15 @@
-import { useState } from "react"
+import "./App.css"
 
-const tasks = [
-	{ id: 1, title: "comprar", completed: true },
-	{ id: 2, title: "gym", completed: false },
-	{ id: 3, title: "cocinar", completed: false },
-]
-
-function TaskList({ tasks }) {
-	return (
-		<ul>
-			{tasks?.map(task => (
-				<li key={task.id}>{task.title}</li>
-			))}
-		</ul>
-	)
-}
-
-function Filter({ children }) {
-	const [filterState, setFilterState] = useState("all")
-
-	const handleFilterChange = event =>
-		setFilterState(event.target.value)
-
-	return children(filterState, handleFilterChange)
-}
+import Filter from "./components/Filter"
+import TaskList from "./components/TaskList"
 
 function App() {
 	return (
 		<Filter>
-			{(filterState, handleFilterChange) => {
+			{(filterState, handleFilterChange, tasksState) => {
 				return (
 					<div>
-						<label htmlFor="filter">Filtrar pro estado: </label>
+						<label htmlFor="filter">Filtrar por estado: </label>
 						<select
 							id="filter"
 							value={filterState}
@@ -43,17 +21,7 @@ function App() {
 								Sin completar
 							</option>
 						</select>
-						<TaskList
-							tasks={
-								filterState === "all"
-									? tasks
-									: tasks.filter(task =>
-											filterState === "completed"
-												? task.completed
-												: !task.completed
-									  )
-							}
-						/>
+						<TaskList tasks={tasksState} />
 					</div>
 				)
 			}}
