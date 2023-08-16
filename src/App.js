@@ -1,12 +1,12 @@
 import "./App.css"
 
-import Filter from "./components/Filter"
+import Filter from "./components/RenderPropsFilter"
 import TaskList from "./components/TaskList"
 
-function App() {
+export default function App() {
 	return (
 		<Filter>
-			{(filterState, handleFilterChange, tasksState) => {
+			{function (filterState, handleFilterChange, tasksState) {
 				return (
 					<div>
 						<label htmlFor="filter">Filtrar por estado: </label>
@@ -28,5 +28,3 @@ function App() {
 		</Filter>
 	)
 }
-
-export default App
