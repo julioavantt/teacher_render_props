@@ -7,9 +7,15 @@ export default function App() {
 	return (
 		<Filter>
 			{function (filterState, handleFilterChange, tasksState) {
+				//! Declaración función
+				console.log({
+					filterState,
+					handleFilterChange,
+					tasksState,
+				})
 				return (
 					<div>
-						<label htmlFor="filter">Filtrar por estado: </label>
+						{/* <label htmlFor="filter">Filtrar por estado: </label>
 						<select
 							id="filter"
 							value={filterState}
@@ -21,7 +27,7 @@ export default function App() {
 								Sin completar
 							</option>
 						</select>
-						<TaskList tasks={tasksState} />
+						<TaskList tasks={tasksState} /> */}
 					</div>
 				)
 			}}
