@@ -21,9 +21,31 @@
 ## Este repo trata sobre: Render Props en React.
 
 -  Esta aplicación está creada con Create React App.
--  Para iniciarla, luego de clonar, ejecute npm i para instalar dependencias y luego mpm start para arrancar el servidor de desarrollo.
+-  Clonarla: git clone https://github.com/julioavantt/teacher_render_props.git
+-  Para iniciarla, luego de clonar, ejecute npm i para instalar dependencias y luego npm start para arrancar el servidor de desarrollo.
+-  Observar archivos src/App.js y src/components/\*
+   <br>
 
-<br>
+## Repos y videos útiles.
+
+-  [Cómo instalar Vite](https://www.youtube.com/watch?v=jcKoP-FvPsY&ab_channel=JuniorPride)
+-  [React createElement](https://github.com/julioavantt/teacher_react_create_element)
+-  [React JSX](https://github.com/julioavantt/teacher_react_jsx_basic)
+-  [React components](https://github.com/julioavantt/teacher_react_components)
+-  [React children](https://github.com/julioavantt/teacher_react_children)
+-  [React useRef](https://github.com/julioavantt/teacher_react_useref)
+-  [Javascript efectos secundarios](https://github.com/julioavantt/teacher_js_side_effects)
+-  [React useEffect](https://github.com/julioavantt/teacher_react_useeffect)
+-  [Javascript Promises](https://github.com/julioavantt/teacher_js_promises)
+-  [Javascript .map](https://github.com/julioavantt/teacher_js_map)
+-  [React .map](https://github.com/julioavantt/teacher_react_map)
+-  [Javascript .fetch](https://github.com/julioavantt/teacher_js_fetch)
+-  [React .fetch](https://github.com/julioavantt/teacher_react_fetch)
+-  [React HOCs](https://github.com/julioavantt/teacher_react_hocs)
+-  [React Render Props básico](https://github.com/julioavantt/teacher_react_render_props_basic)
+-  [React Render Props](https://github.com/julioavantt/teacher_render_props)
+-  [React Custom Hooks](https://github.com/julioavantt/teacher_react_custom_hooks)
+   <br>
 
 ## ⚙️ &nbsp;GitHub Analytics
 
